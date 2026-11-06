@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Full Stack Developer Portfolio</title>
+  <meta name="description" content="One-page responsive portfolio built with Flexbox, CSS Grid, media queries and CSS animations.">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- ================= HEADER (Flexbox) ================= -->
+  <header class="header">
+    <a href="#home" class="logo">&lt;YourName/&gt;</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO (Flexbox) ================= -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <h2 class="role">Full Stack Developer</h2>
+        <p class="hero-desc">
+          I design and build fast, accessible and good-looking websites,
+          from clean front-end layouts to reliable back-end logic.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- Replace the src below with your own photo, e.g. src="profile.jpg" -->
+        <img
+          src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%231e293b'/%3E%3Ccircle cx='100' cy='78' r='36' fill='%2314b8a6'/%3E%3Cpath d='M30 190c0-42 31-68 70-68s70 26 70 68z' fill='%238b5cf6'/%3E%3C/svg%3E"
+          alt="Profile photo of Your Name">
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm a computer science student who loves turning ideas into working
+          products. I enjoy building responsive interfaces, writing clean code
+          and learning new tools that make the web better for everyone.
+        </p>
+        <p>
+          Outside of coding, I like solving problems, collaborating on team
+          projects and exploring new technologies. I'm currently looking for
+          internship and project opportunities where I can grow as a
+          full stack developer.
+        </p>
+        <ul class="about-facts">
+          <li><strong>Education:</strong> B.Tech, Computer Science</li>
+          <li><strong>Focus:</strong> Web development &amp; UI design</li>
+          <li><strong>Location:</strong> India</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS (Grid) ================= -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid skills-grid">
+        <article class="card">
+          <h3>HTML5</h3>
+          <p>Semantic, accessible markup and clean page structure.</p>
+        </article>
+        <article class="card">
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animations and responsive design.</p>
+        </article>
+        <article class="card">
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, ES6+ and interactive features.</p>
+        </article>
+        <article class="card">
+          <h3>React</h3>
+          <p>Reusable components and state-driven interfaces.</p>
+        </article>
+        <article class="card">
+          <h3>Node.js</h3>
+          <p>REST APIs and server-side logic with Express.</p>
+        </article>
+        <article class="card">
+          <h3>Databases</h3>
+          <p>Working with MySQL and MongoDB for data storage.</p>
+        </article>
+        <article class="card">
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, branches and collaborative workflows.</p>
+        </article>
+        <article class="card">
+          <h3>UI Design</h3>
+          <p>Layout, typography and color for consistent design.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS (Grid) ================= -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card project-card">
+          <span class="tag">Front-end</span>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive one-page portfolio using Flexbox, Grid, media queries and keyframe animations.</p>
+          <a href="#" class="card-link">View Project &rarr;</a>
+        </article>
+        <article class="card project-card">
+          <span class="tag">Full Stack</span>
+          <h3>Task Manager App</h3>
+          <p>Create, edit and track daily tasks with a Node.js back end and a database.</p>
+          <a href="#" class="card-link">View Project &rarr;</a>
+        </article>
+        <article class="card project-card">
+          <span class="tag">JavaScript</span>
+          <h3>Weather Dashboard</h3>
+          <p>Shows live weather for any city by fetching data from a public API.</p>
+          <a href="#" class="card-link">View Project &rarr;</a>
+        </article>
+        <article class="card project-card">
+          <span class="tag">Full Stack</span>
+          <h3>Online Store Demo</h3>
+          <p>Product listing, cart and checkout flow with a clean, mobile-friendly UI.</p>
+          <a href="#" class="card-link">View Project &rarr;</a>
+        </article>
+        <article class="card project-card">
+          <span class="tag">Front-end</span>
+          <h3>Recipe Finder</h3>
+          <p>Search and filter recipes by ingredient with smooth card hover effects.</p>
+          <a href="#" class="card-link">View Project &rarr;</a>
+        </article>
+        <article class="card project-card">
+          <span class="tag">Linux</span>
+          <h3>Shell Script Toolkit</h3>
+          <p>A set of Bash scripts to automate file handling and everyday lab tasks.</p>
+          <a href="#" class="card-link">View Project &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (Flexbox) ================= -->
+  <footer class="footer">
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Reveals sections as they scroll into view -->
+  <script>
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      items.forEach((el) => io.observe(el));
+    } else {
+      items.forEach((el) => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
